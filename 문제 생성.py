@@ -68,8 +68,6 @@ def create_problem_folder_with_samples(category, problem_id):
     output_file = os.path.join(problem_path, "output.txt")
 
     if not os.path.exists(solution_file):
-        with open(solution_file, 'w') as f:
-            f.write(f"# {problem_id} 문제 풀이\n")
         print(f"Created file: {solution_file}")
 
     if input_examples:
